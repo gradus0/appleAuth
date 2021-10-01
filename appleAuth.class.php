@@ -3,19 +3,19 @@ namespace appleAuth;
 
 class sign{
 		// https://developer.apple.com/account/resources/identifiers/list/serviceId -- indificator value
-		$this->clientId = ""; // example: com.youdomen
+		protected $clientId = ""; // example: com.youdomen
 	
 		// your developer account id -> https://developer.apple.com/account/#/membership/
-		$this->teamId = "";
+		protected $teamId = "";
 	
 		// key value show in -> https://developer.apple.com/account/resources/authkeys/list
-		$this->key = ""; 
+		protected $>key = ""; 
 
 		// your page url where this script
-		$this->redirect_uri = ""; // example: youdomen.com/appleAuth.class.php
+		protected $redirect_uri = ""; // example: youdomen.com/appleAuth.class.php
 	
 		// path your key file, download file this -> https://developer.apple.com/account/resources/authkeys/list
-		$keyPath =''; // example: ./AuthKey_key.p8 
+		protected $keyPath =''; // example: ./AuthKey_key.p8 
 	
 	
 		function __construct($clientId,$teamId,$key,$redirect_uri,$keyPath){
