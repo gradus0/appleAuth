@@ -17,7 +17,7 @@ example run code:
 include_once "appleAuth.class.php";
 
 // https://developer.apple.com/account/resources/identifiers/list/serviceId -- indificator value
-$clientId = "";
+$clientId = ""; // com.youdomen
 // your developer account id -> https://developer.apple.com/account/#/membership/
 $teamId = "";
 // key value show in -> https://developer.apple.com/account/resources/authkeys/list
