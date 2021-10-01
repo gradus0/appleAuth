@@ -3,13 +3,13 @@ Sign in with Apple (apple JWS token)
 
 steps:
 * go to https://developer.apple.com/ -> Certificates, Identifiers & Profiles -> Identifiers ( https://developer.apple.com/account/resources/identifiers/list/bundleId ) -> click icon "plus" and create new App Ids. Add Capabilities "Sign In with Apple" and set config width your domen and callback-url
-next go to https://developer.apple.com/account/#!/membership/
-Copy Team ID value - this $teamId
 * change filter App Ids to Services IDs ( https://developer.apple.com/account/resources/identifiers/list/serviceId ) -> click icon "plus" and create new Services IDs. Add Capabilities "Sign In with Apple" and set config width your domen and callback-url.
 Copy Identifier value - this $clientId
 * change menu to Keys ( https://developer.apple.com/account/resources/authkeys/list ) and click icon "plus" and create new Keys.
 Copy Key ID value - this $key
 Donwload file and set path to $keyPath;
+* next go to https://developer.apple.com/account/#!/membership/
+Copy Team ID value - this $teamId
 
 example run code: 
 ```php
