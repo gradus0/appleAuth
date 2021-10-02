@@ -9,7 +9,7 @@ class sign{
 		protected $teamId = "";
 	
 		// key value show in -> https://developer.apple.com/account/resources/authkeys/list
-		protected $>key = ""; 
+		protected $key = ""; 
 
 		// your page url where this script
 		protected $redirect_uri = ""; // example: youdomen.com/appleAuth.class.php
@@ -22,7 +22,7 @@ class sign{
 			$this->clientId = $clientId;
 			$this->teamId = $teamId;
 			$this->key = $key;
-			$this->redirect_uri = $redirect_uri;
+			$this->redirect_uri = $this->redirect_uri;
 			$this->keyPath = $keyPath;
 		}
 
@@ -32,7 +32,7 @@ class sign{
 						'response_type' => "code",
 						'response_mode' => 'form_post',
 						'client_id' => $this->clientId,
-						'redirect_uri' => $redirect_uri,
+						'redirect_uri' => $this->redirect_uri,
 						'state' => $state,
 						'scope' => $scope,
 					]);
