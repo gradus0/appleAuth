@@ -43,7 +43,7 @@ try{
 
 		$state = bin2hex(random_bytes(5));
 
-		echo "<a href='".$appleAuthObj->get_url($state."'>sign</a>";
+		echo "<a href='".$appleAuthObj->get_url($state)."'>sign</a>";
 	}
 																					
 } catch (\Exception $e) {
