@@ -35,7 +35,7 @@ try{
 	if(isset($_REQUEST['code'])){
 		$jwt_token = $appleAuthObj->get_jwt_token($_REQUEST['code']);
 		$response = $appleAuthObj->get_response($_REQUEST['code'],$jwt_token);
-		$result_token = $this->read_id_token($response['read_id_token']);
+		$result_token = $appleAuthObj->read_id_token($response['read_id_token']);
 
 		var_dump($response);
 		var_dump($result_token);
