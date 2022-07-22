@@ -17,7 +17,7 @@ class sign
 	protected $redirect_uri = ""; // example: youdomen.com/appleAuth.class.php
 
 	// path your key file, download file this -> https://developer.apple.com/account/resources/authkeys/list
-	protected $keyPath = ''; // example: ./AuthKey_key.p8 
+	protected $keyPath = ''; // example: ./AuthKey_key.p8
 
 
 	function __construct($clientId, $teamId, $key, $redirect_uri, $keyPath)
@@ -25,7 +25,7 @@ class sign
 		$this->clientId = $clientId;
 		$this->teamId = $teamId;
 		$this->key = $key;
-		$this->redirect_uri = $this->redirect_uri;
+		$this->redirect_uri = $redirect_uri;
 		$this->keyPath = $keyPath;
 	}
 
